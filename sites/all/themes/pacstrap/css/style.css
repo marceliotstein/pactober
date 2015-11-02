@@ -1,0 +1,374 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+.pac-front-descrip {
+  margin: 0px;
+  padding: 27px 0px 0px 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1em;
+}
+
+.pac-descrip-italic {
+  font-style: italic;
+}
+
+.pac-descrip-bold {
+  font-weight: bold;
+}
+
+.rightbar-title {
+  padding-bottom: 12px;
+}
+
+.pac-rightbar {
+  margin: 0px 5px 0px 5px;
+  padding: 9px 0px 9px 0px;
+  background-color: #ffffff;
+  min-height: 500px;
+  /*border-width: 1px;
+  border-color: #22aa66;
+  border-style: solid;
+  border-radius: 9px;*/
+}
+
+.rightbar-box {
+  padding: 12px 12px 18px 12px;
+  background-color: #99ffee;
+  border-width: 1px;
+  border-color: #339966;
+  border-style: solid;
+  border-radius: 9px;
+  margin-bottom: 24px;
+}
+
+.rightbar-search {
+}
+
+.pac-rightbar #block-views-featured-books-block,
+.pac-rightbar #block-node-syndicate {
+  padding: 12px 12px 18px 12px;
+  background-color: #99ffee;
+  border-width: 1px;
+  border-color: #339966;
+  border-style: solid;
+  border-radius: 9px;
+  margin-bottom: 24px;
+}
+
+.pac-rightbar h2 {
+  color: #22aa66;
+  text-align: right;
+  font-style: italic;
+  font-size: 1.4em;
+  padding-right: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.pac-green-sh {
+  color: #22aa66;
+  font-size: .9em;
+  font-style: italic;
+}
+
+
+h1.pac-front-title {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: black;
+}
+
+#block-node-syndicate {
+  padding-top: 18px;
+  text-align: center;
+}
+
+.review-table {
+  padding-top: 9px;
+}
+
+.review-header {
+  padding-top: 18px;
+  text-align: left;
+}
+
+.review-byline {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 1.2em;
+} 
+
+.review-title a {
+  color: black;
+}
+
+.review-img-cell {
+  vertical-align: top;
+}
+
+.review-summary-cell {
+  vertical-align: top;
+  text-align: left;
+  font-size: .9em;
+}
+ 
+.featured-book {
+  border-bottom: 2px solid #22aa66;
+  text-align: center;
+} 
+
+.glyph-well {
+  padding-left: 0px; 
+  padding-right: 0px; 
+}
+
+.xs-header-well {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+.xs-title-well {
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 8px;
+  border-width: 0px;
+}
+
+.xs-title-well h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  color: black;
+}
+
+.sm-header-well {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+.sm-title-well {
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 12px;
+  border-width: 0px;
+}
+
+.sm-title-well h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5em;
+  color: black;
+}
+
+.sm-title-well h1 .sh {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-size: .85em;
+  color: #22aa66;
+}
+
+.md-header-well {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+}
+
+.md-title-well {
+  width: 100%;
+  height: 200px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 24px;
+  border-style: solid;
+  border-color: #22aa66;
+  border-width: 0px;
+  border-radius: 9px;
+}
+
+.md-title-well h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5em;
+  color: black;
+}
+
+.tlogo {
+  text-align: left;
+  width: 210px;
+  padding: 0px 10px 0px 0px;
+}
+
+.ttable {
+  border-spacing: 0px;
+}
+
+#first-time {
+  display: none;
+}
+
+h1 { 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8em;
+}
+
+.dropdown-menu>li {
+  text-align: right;
+  border-bottom: 2px;
+}
+
+.page-header {
+  border-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 18px;
+  }
+}
+
+.pac-logobar {
+  text-align: center;
+  padding: 9px 0px 9px 0px;
+}
+
+.pac-topbar {
+  text-align: right;
+  padding: 9px 0px 9px 0px;
+  text-color: #22aa66;
+}
+
+.btn-default {
+  color: #22aa66;
+}
+
+.btn-default a,
+.btn-default a.link,
+.btn-default a.visited,
+.btn-default a.active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pac-large {
+  font-size: 2.1em;
+  line-height: 36px;
+}
+
+.pac-medium {
+  font-size: 1.2em;
+  line-height: 24px;
+}
+
+.view-pac-discussions {
+  background-color: green;
+  width: 300px;
+  padding: 9px;
+  margin: 9px;
+  text-color: #ffffff;
+  float: left;
+}
+
+.view-pac-stories {
+  background-color: blue;
+  width: 300px;
+  padding: 9px;
+  margin: 9px;
+  text-color: #ffffff;
+  float: left;
+}
+
+.pac-mainwrap {
+  padding: 0px 0px 0px 0px;
+}
+  
+.pac-xs-core {
+  padding: 9px 9px 9px 9px;
+}
+
+.pac-core {
+  padding: 9px 0px 9px 0px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 18px;
+}
+
+.field-name-taxonomy-forums {
+  padding-bottom: 9px;
+}
+
+.jumbotron {
+  margin-right: 18px;
+  height: 27px;
+  background-color: #ffffff; 
+  padding: 27px 0px 54px 0px;
+}
+
+.jumbotron h2 {
+  font-size: 45px;
+}
+
+.pacadd {
+  padding-top: 18px;
+}
+
+.leftnavname a,
+.leftnavname a.link,
+.leftnavname a.visited,
+.leftnavname a.active {
+  color: #5f5f5f;
+  text-decoration: none;
+}
+
+.leftnavlogo {
+  padding-bottom: 18px;
+}
+
+.leftnavblurb {
+  padding-right: 9px;
+}
+
+.chimptime {
+  text-align: left;
+}
+
+#mc_embed_signup {
+  width: 200px;
+}
+
+.leftnav {
+  margin: 9px 0px 18px 9px;
+  padding: 9px;
+  border-style: dotted;
+  border-width: 0px;
+  border-right-width: 5px;
+  border-radius: 5px;
+  border-right-color: #afafaf;
+  background-color: #ffffff;
+}
+
+.well {
+  border-width: 0px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0px 0px;
+}

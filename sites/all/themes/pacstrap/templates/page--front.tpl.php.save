@@ -1,0 +1,130 @@
+<?php
+/*
+ * main page template for pacifism.sh
+ */
+?>
+<div class="main-container container-fluid">
+  <header role="banner" id="page-header">
+    <div class="row pac-topbar">
+      <span class="btn-toolbar hidden-xs hidden-sm col-md-10" role="toolbar" aria-label="Actions"> 
+        <button type="button" class="btn btn-default">
+          <a href="/about">About this site</a>
+        </button>
+        <button type="button" class="btn btn-default">
+          <?php
+            global $user;
+            if ($user->uid > 0) {
+               print 'Welcome <a href="/user">' . $user->name . '</a>';
+            } else {
+               print '<a href="/user/">Log in</a>';
+            }
+          ?>
+        </button>
+        <button type="button" class="btn btn-default">
+          <a href="/newsletter/signup">Subscribe to Weekly Newsletter</a><br />
+        </button>
+      </span>
+    </div>
+  </header> <!-- /#page-header -->
+
+  <div class="row">
+    <!-- XS AND SM -->
+    <span class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl pac-logobar centered">
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 little-logo-well centered">
+          <a href="/"><img class="img-responsive" src="/sites/all/themes/pacstrap/logos/pcube200.png" /></a>
+        </div>
+        <div class="col-xs-7 col-sm-7 little-title-well centered">
+          <h1>Pacifism.sh</h1>
+        </div>
+        <div class="col-xs-2 col-sm-2">
+          <!--<row align="right">-->
+            <div class="dropdown pull-right">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" aria=expanded="true">
+                <span class="glyphicon glyphicon-align-justify"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                  <a href="/about">About This Site</a>
+                </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                  <?php
+                    global $user;
+                    if ($user->uid > 0) {
+                       print '<a href="/user">Welcome ' . $user->name . '</a>';
+                    } else {
+                       print '<a href="/user/">Create Account or Log In</a>';
+                    }
+                  ?>
+                </li> 
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                  <a href="/about">Search This Site</a>
+                </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                  <a href="/newsletter/signup">Subscribe To Newsletter</a>
+                </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                  <a href="/feed">Subscribe To Feed</a>
+                </li>
+              </ul>
+            </div>
+          <!--</row>-->
+        </div>
+      </div>
+    </span>
+    <!-- MD LG XL -->
+    <span class="hidden-xs hidden-sm col-md-1">
+    </span>
+    <span class="hidden-xs hidden-sm col-md-10 pac-border pac-logobar">
+      <div class="col-md-4 big-logo-well align-right" >
+          <a href="/"><img src="/sites/all/themes/pacstrap/logos/pcube200.png" /></a>
+      </div>
+      <div class="col-md-8 big-title-well centered">
+        <table class="tcenter"><tr class="tcenter"><td class="tcenter">
+        <h1>Pacifism.sh</h1>
+        </td></tr></table>
+      </div>
+    </span>
+    <span class="hidden-xs hidden-sm col-md-1">
+    </span>
+  </div> 
+
+  <div class="row pac-mainwrap">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-7 pac-core">
+      <a id="main-content"></a>
+      <?php if (!empty($title)): ?>
+      <?php endif; ?>
+      <?php print $messages; ?>
+      <?php if (!empty($tabs)): ?>
+        <?php print render($tabs); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['help'])): ?>
+        <?php print render($page['help']); ?>
+      <?php endif; ?>
+      <?php if (!empty($action_links)): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+      <div class="pacadd">
+        <div class="addthis_sharing_toolbox"></div>
+      </div>
+    </div>
+    <div class="hidden-xs hidden-sm col-md-3 pac-rightbar">
+      This site is under construction and will launch in January 2015.<br />
+      <br />
+      <?php
+        $block = module_invoke('search', 'block_view');
+        $search_render = render($block);
+        print $search_render;
+      ?>
+      <?php print render($page['highlighted']); ?>
+    </div>
+    <div class="col-md-1">
+    </div>
+  </div>
+</div>
+<footer class="footer container">
+  <?php print render($page['footer']); ?>
+</footer>
