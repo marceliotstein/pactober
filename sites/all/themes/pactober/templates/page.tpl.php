@@ -138,9 +138,9 @@
           <a href="https://twitter.com/pacifism21" class="twitter-timeline" data-widget-id="651953113650343937" data-theme="dark" data-link-color="#55aaaa" data-border-color="#55aa55" data-aria-polite="polite">Tweets by pacifism21</a>
         </div>
 
-        <div class="well pacimagewell-1">
+        <div class="well pacimagewell-japan">
           <div class="pacheading-dark">
-            <h4>Practical Pacifism: How We Defeat ISIL</h4>
+            <h4>360&deg; History: How We Got To Pearl Harbor ...</h4>
           </div>
         </div>
       </div>

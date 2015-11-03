@@ -162,6 +162,24 @@ body {
   background-position: center;
 }
 
+.pacimagewell-japan {
+  min-height: 260px;
+  background-image: url("/pactober/sites/default/files/breakingopenjapan.jpg");
+  background-position: center;
+}
+
+.pacimagewell-1 {
+  min-height: 260px;
+  background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
+  background-position: center;
+}
+
+.pacimagewell-1 {
+  min-height: 260px;
+  background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
+  background-position: center;
+}
+
 .navbar-default {
   background-color:#ffffff;
   border-width:0;
@@ -230,7 +248,7 @@ body {
 }
 
 hr {
-  border-color:#ececec; 
+  border-color:#ececec;
 }
 
 button {
