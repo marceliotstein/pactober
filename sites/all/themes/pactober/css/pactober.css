@@ -156,6 +156,11 @@ body {
   opacity:.9;
 }
 
+.pac-story-image-well {
+  min-height: 260px;
+  background-position: center;
+}
+
 .pacimagewell-1 {
   min-height: 260px;
   background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
