@@ -110,89 +110,10 @@
 <div class="row pac-main">
   <div class="col-xs-0 col-sm-1">
   </div>
-  <?php if ($is_front): ?>
-    <!-- FRONT PAGE TEMPLATE -->
-    <div class="container" id="main">
-    <div class="row">
-
-      <!-- FRONT COLUMN ONE -->
-      <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4>A Pacifist Vocabulary</h4></div>
-          <div class="panel-body">
-            <div class="list-group">
-              <a href="/nonviolence" class="list-group-item">Nonviolence</a>
-              <a href="/practical-pacifism" class="list-group-item">Practical Pacifism</a>
-              <a href="/satyagraha" class="list-group-item">Satyagraha</a>
-              <a href="/ahisma" class="list-group-item">Ahisma</a>
-              <a href="/civil-resistance" class="list-group-item">Civil Resistance</a>
-              <!--<a href="" class="list-group-item">Evil</a>
-              <a href="" class="list-group-item">Trauma Theory</a>
-              <a href="" class="list-group-item">Blood Alienation</a>
-              <a href="" class="list-group-item">Guerrophilia</a>-->
-            </div>
-          </div>
-        </div>
-
-        <div class="well pac-twitterbox">
-          <a href="https://twitter.com/pacifism21" class="twitter-timeline" data-widget-id="651953113650343937" data-theme="dark" data-link-color="#55aaaa" data-border-color="#55aa55" data-aria-polite="polite">Tweets by pacifism21</a>
-        </div>
-
-        <div class="well pacimagewell-japan">
-          <div class="pacheading-dark">
-            <h4>360&deg; History: How We Got To Pearl Harbor ...</h4>
-          </div>
-        </div>
-      </div>
-
-      <!-- FRONT COLUMN TWO -->
-      <div class="col-md-4 col-sm-6">
-        <div class="well pacimagewell-1">
-          <div class="pacheading-dark">
-            <h4>Practical Pacifism: How We Defeat ISIL</h4>
-          </div>
-        </div>
-
-        <div class="well pacimagewell-1">
-          <div class="pacheading-dark">
-            <h4>Practical Pacifism: How We Defeat ISIL</h4>
-          </div>
-        </div>
-
-        <div class="well pacimagewell-1">
-          <div class="pacheading-dark">
-            <h4>Practical Pacifism: How We Defeat ISIL</h4>
-          </div>
-        </div>
-      </div>
-
-      <!-- FRONT COLUMN THREE -->
-      <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4>Help Make Pacifism21 Happen!</h4></div>
-          <div class="panel-body">
-            <center>
-              <img class="img-responsive" src="sites/default/files/pacbox300.jpg" /><br />
-              Support us on Indiegogo.
-            </center>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4>Subscribe to our Newsletter</h4></div>
-          <div class="panel-body">
-            <img class="pac-mailbox" src="sites/default/files/mailbox_icon.png" />
-          </div>
-          <div class="form-group" style="padding:14px;">
-            <textarea class="form-control" placeholder="Enter your Email Address"></textarea>
-          </div>
-        </div>
-      </div>
-      <!-- END OF FRONT COLUMN THREE -->
-
-    </div><!--/row-->
-  </div>
-  <?php else: ?>
+  <?php if ($is_front):
+    //print render($page['content']);
+    print views_embed_view('front_stories', 'block_1');
+  else: ?>
     <!-- STANDARD PAGE TEMPLATE -->
     <div class="pac-core col-xs-12 col-sm-10">
       <div class="col-xs-12 col-sm-12 col-md-9">

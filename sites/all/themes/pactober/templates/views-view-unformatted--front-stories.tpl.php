@@ -11,7 +11,7 @@
 <?php
 $num_stories = 0;
 
-// divide into three columns
+// divide into one, two or three columns
 $col1 = '<div class="col-md-4 col-sm-6">';
 $col2 = '<div class="col-md-4 col-sm-6">';
 $col3 = '<div class="col-md-4 col-sm-6">';
@@ -25,12 +25,6 @@ foreach ($rows as $id => $row) {
   } else {
     $col3 .= $row;
   }
-  ?>
-    <?php
-    //print "NS " . $num_stories . "<br />";
-    //print $row;
-    ?>
-  <?php
   $num_stories++;
 }
 $col1 .= "</div>";
