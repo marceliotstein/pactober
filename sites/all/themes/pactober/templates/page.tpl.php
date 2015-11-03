@@ -110,10 +110,11 @@
 <div class="row pac-main">
   <div class="col-xs-0 col-sm-1">
   </div>
-  <?php if ($is_front):
-    //print render($page['content']);
-    print views_embed_view('front_stories', 'block_1');
-  else: ?>
+  <?php if ($is_front): ?>
+    <div class="col-xs-12 col-sm-10">
+      <?php print views_embed_view('front_stories', 'block_1'); ?>
+    </div>
+  <?php else: ?>
     <!-- STANDARD PAGE TEMPLATE -->
     <div class="pac-core col-xs-12 col-sm-10">
       <div class="col-xs-12 col-sm-12 col-md-9">
