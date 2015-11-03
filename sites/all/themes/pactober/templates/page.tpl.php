@@ -114,6 +114,8 @@
     <!-- FRONT PAGE TEMPLATE -->
     <div class="container" id="main">
     <div class="row">
+
+      <!-- FRONT COLUMN ONE -->
       <div class="col-md-4 col-sm-6">
         <div class="panel panel-default">
           <div class="panel-heading"><h4>A Pacifist Vocabulary</h4></div>
@@ -131,29 +133,25 @@
             </div>
           </div>
         </div>
-        <div class="well">
-          <form class="form-horizontal" role="form">
-            <h4>What's New</h4>
-            <div class="form-group" style="padding:14px;">
-              <textarea class="form-control" placeholder="Update your status"></textarea>
-            </div>
-            <button class="btn btn-success pull-right" type="button">Post</button><ul class="list-inline"><li><a href="#"><i class="glyphicon glyphicon-align-left"></i></a></li><li><a href="#"><i class="glyphicon glyphicon-align-center"></i></a></li><li><a href="#"><i class="glyphicon glyphicon-align-right"></i></a></li></ul>
-          </form>
+
+        <div class="well pac-twitterbox">
+          <a href="https://twitter.com/pacifism21" class="twitter-timeline" data-widget-id="651953113650343937" data-theme="dark" data-link-color="#55aaaa" data-border-color="#55aa55" data-aria-polite="polite">Tweets by pacifism21</a>
         </div>
 
-        <div class="panel panel-default">
-          <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>More Templates</h4></div>
-          <div class="panel-body">
-            <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">Free @Bootply</a>
-            <div class="clearfix"></div>
-            There a load of new free Bootstrap 3 ready templates at Bootply. All of these templates are free and don't require extensive customization to the Bootstrap baseline.
-            <hr>
-            <ul class="list-unstyled"><li><a href="http://www.bootply.com/templates">Dashboard</a></li><li><a href="http://www.bootply.com/templates">Darkside</a></li><li><a href="http://www.bootply.com/templates">Greenfield</a></li></ul>
+        <div class="well pacimagewell-1">
+          <div class="pacheading-dark">
+            <h4>Practical Pacifism: How We Defeat ISIL</h4>
           </div>
         </div>
-
       </div>
+
+      <!-- FRONT COLUMN TWO -->
       <div class="col-md-4 col-sm-6">
+        <div class="well pacimagewell-1">
+          <div class="pacheading-dark">
+            <h4>Practical Pacifism: How We Defeat ISIL</h4>
+          </div>
+        </div>
 
         <div class="well pacimagewell-1">
           <div class="pacheading-dark">
@@ -161,11 +159,14 @@
           </div>
         </div>
 
-        <div class="twitterbox">
-          <a href="https://twitter.com/pacifism21" class="twitter-timeline" data-widget-id="651953113650343937" data-theme="dark" data-link-color="#55aaaa" data-border-color="#55aa55" data-aria-polite="polite">Tweets by pacifism21</a>
+        <div class="well pacimagewell-1">
+          <div class="pacheading-dark">
+            <h4>Practical Pacifism: How We Defeat ISIL</h4>
+          </div>
         </div>
-
       </div>
+
+      <!-- FRONT COLUMN THREE -->
       <div class="col-md-4 col-sm-6">
         <div class="panel panel-default">
           <div class="panel-heading"><h4>Help Make Pacifism21 Happen!</h4></div>
@@ -182,20 +183,13 @@
           <div class="panel-body">
             <img class="pac-mailbox" src="sites/default/files/mailbox_icon.png" />
           </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Top Items</h4></div>
-          <div class="panel-body">
-            <div class="list-group">
-              <a href="http://bootply.com/tagged/bootstrap-3" class="list-group-item active">Bootstrap 3</a>
-              <a href="http://bootply.com/tagged/snippets" class="list-group-item">Snippets</a>
-              <a href="http://bootply.com/tagged/example" class="list-group-item">Examples</a>
-            </div>
+          <div class="form-group" style="padding:14px;">
+            <textarea class="form-control" placeholder="Enter your Email Address"></textarea>
           </div>
         </div>
-
       </div>
+      <!-- END OF FRONT COLUMN THREE -->
+
     </div><!--/row-->
   </div>
   <?php else: ?>
