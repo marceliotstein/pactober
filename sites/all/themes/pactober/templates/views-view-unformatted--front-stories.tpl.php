@@ -10,18 +10,31 @@
 
 <?php
 $num_stories = 0;
+
+// divide into three columns
+$col1 = '<div class="col-md-4 col-sm-6">';
+$col2 = '<div class="col-md-4 col-sm-6">';
+$col3 = '<div class="col-md-4 col-sm-6">';
+
 foreach ($rows as $id => $row) {
-  if (($num_stories%3)==0) {
-    print "<h2>THREE</h2>";
+  $colmod = $num_stories % 3;
+  if ($colmod==0) {
+    $col1 .= $row;
+  } else if ($colmod==1) {
+    $col2 .= $row;
+  } else {
+    $col3 .= $row;
   }
   ?>
-  <div id="xyz">
     <?php
-    print "NS " . $num_stories . "<br />";
-    print $row;
+    //print "NS " . $num_stories . "<br />";
+    //print $row;
     ?>
-  </div>
   <?php
   $num_stories++;
 }
+$col1 .= "</div>";
+$col2 .= "</div>";
+$col3 .= "</div>";
+print $col1 . $col2 . $col3;
 ?>

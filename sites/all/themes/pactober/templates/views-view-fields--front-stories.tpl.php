@@ -25,13 +25,18 @@
  */
 ?>
 <?php
-print "FIELDS<br />";
-
+$body = "";
+$img = "";
+$tout_order = 0;
 foreach ($fields as $id => $field) {
   if ($id=="title") {
     $title = $field->content;
+  } else if ($id=="body") {
+    $body = $field->content;
   } else if ($id=="field_main_image") {
     $img = $field->content;
+  } else if ($id=="field_tout_order") {
+    $tout_order = $field->content;
   }
 }
 
@@ -45,11 +50,19 @@ if (!empty($img)) {
   }
 }
 if (!empty($justimg)) {
+  // well with background image
   ?>
   <div class="well pac-story-image-well" style="background-image: url(<?php print $justimg ?>)">
     <div class="pacheading-dark">
       <h4><?php print $title ?></h4>
     </div>
   </div>
+  <?php
+} else {
+  // well with no background image
+  ?>
+    <div class="well">
+      <?php print $body; ?>
+    </div>
   <?php
 }
