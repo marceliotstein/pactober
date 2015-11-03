@@ -77,81 +77,81 @@
   <div class="col-md-12">
     <div class="navbar-header">
 
-      <a href="#" class="navbar-btn btn-logo btn-default btn-plus dropdown-toggle" data-toggle="dropdown"><img class="paclogo" src="/pactober/sites/all/themes/pactober/images/Pac21Straight416.jpg" /></a>
+      <a href="/pactober" class="navbar-btn btn-logo btn-default"><img class="paclogo" src="/pactober/sites/all/themes/pactober/images/Pac21Straight416.jpg" /></a>
 
-      <ul class="nav dropdown-menu">
-        <li><a href="/search"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Search</a></li>
-        <li><a href="/subscribe"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Subscribe</a></li>
-        <li><a href="/archives"><i class="glyphicon glyphicon-dashboard" style="color:#0000aa;"></i> Archives</a></li>
-        <li><a href="/about"><i class="glyphicon glyphicon-inbox" style="color:#11dd11;"></i> About Pacifism21</a></li>
-        <li class="nav-divider"></li>
-        <li><a href="/user"><i class="glyphicon glyphicon-cog" style="color:#dd1111;"></i> Login</a></li>
-      </ul>
+      <!--<ul class="nav dropdown-menu">
+      <li><a href="/search"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Search</a></li>
+      <li><a href="/subscribe"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Subscribe</a></li>
+      <li><a href="/archives"><i class="glyphicon glyphicon-dashboard" style="color:#0000aa;"></i> Archives</a></li>
+      <li><a href="/about"><i class="glyphicon glyphicon-inbox" style="color:#11dd11;"></i> About Pacifism21</a></li>
+      <li class="nav-divider"></li>
+      <li><a href="/user"><i class="glyphicon glyphicon-cog" style="color:#dd1111;"></i> Login</a></li>
+    </ul>-->
 
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse2">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Posts</a></li>
-        <li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>
-        <li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
-      </ul>
-    </div>
   </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse2">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#loginModal" role="button" data-toggle="modal">Search</a></li>
+      <li><a href="#loginModal" role="button" data-toggle="modal">Subscribe</a></li>
+      <li><a href="#loginModal" role="button" data-toggle="modal">Archives</a></li>
+      <li><a href="#aboutModal" role="button" data-toggle="modal">About Pacifism21</a></li>
+    </ul>
+  </div>
+</div>
 </div>
 
 <div class="row pac-main">
   <div class="col-xs-0 col-sm-1">
   </div>
-  <?php if ($is_front): ?>
-    <div class="col-xs-12 col-sm-10">
+  <div class="col-xs-12 col-sm-10">
+    <?php if ($is_front): ?>
       <?php print views_embed_view('front_stories', 'block_1'); ?>
-    </div>
-  <?php else: ?>
-    <!-- STANDARD PAGE TEMPLATE -->
-    <div class="pac-core col-xs-12 col-sm-10">
-      <div class="col-xs-12 col-sm-12 col-md-9">
-        <a id="main-content"></a>
-        <?php if (!empty($title)): ?>
-          <h1><?php print $title ?></h1>
-        <?php endif; ?>
-        <?php print $messages; ?>
-        <?php if (!empty($tabs)): ?>
-          <?php print render($tabs); ?>
-        <?php endif; ?>
-        <?php if (!empty($page['help'])): ?>
-          <?php print render($page['help']); ?>
-        <?php endif; ?>
-        <?php if (!empty($action_links)): ?>
-          <ul class="action-links"><?php print render($action_links); ?></ul>
-        <?php endif; ?>
-        <?php print render($page['content']); ?>
-        <div class="pacadd">
-          <div class="addthis_sharing_toolbox"></div>
+    <?php else: ?>
+      <!-- STANDARD PAGE TEMPLATE -->
+      <div class="row pac-readable-core">
+        <div class="pac-readable-main col-xs-12 col-sm-12 col-md-9">
+          <a id="main-content"></a>
+          <?php if (!empty($title)): ?>
+            <h1><?php print $title ?></h1>
+          <?php endif; ?>
+          <?php print $messages; ?>
+          <?php if (!empty($tabs)): ?>
+            <?php print render($tabs); ?>
+          <?php endif; ?>
+          <?php if (!empty($page['help'])): ?>
+            <?php print render($page['help']); ?>
+          <?php endif; ?>
+          <?php if (!empty($action_links)): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+          <?php print render($page['content']); ?>
+          <div class="pacadd">
+            <div class="addthis_sharing_toolbox"></div>
+          </div>
         </div>
-      </div>
-      <div class="hidden-xs hidden-sm col-md-3 pac-rightbar">
-        <div class="rightbar-box rightbar-search">
-          <h2 class="rightbar-title">Search</h2>
+        <div class="pac-rightbar hidden-xs hidden-sm col-md-3">
+          <div class="rightbar-box rightbar-search">
+            <h2 class="rightbar-title">Search</h2>
+            <?php
+            $block = module_invoke('search', 'block_view');
+            $search_render = render($block);
+            print $search_render;
+            ?>
+          </div>
           <?php
-          $block = module_invoke('search', 'block_view');
-          $search_render = render($block);
-          print $search_render;
+          print render($page['highlighted']);
           ?>
         </div>
-        <?php
-        print render($page['highlighted']);
-        ?>
       </div>
-    </div>
-  <?php endif; ?>
+    <?php endif; ?>
+  </div>
   <div class="col-xs-1">
   </div>
 

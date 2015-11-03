@@ -117,10 +117,15 @@
   margin-top: 80px;
 }
 
-.pac-core {
-  padding: 9px 9px 9px 0px;
+.pac-readable-core {
+  padding: 9px 9px 9px 9px;
   background-color: #ffffff;
   border-radius: 9px;
+}
+
+.pac-readable-main {
+  padding: 0px;
+  margin: 0px;
 }
 
 .pac-mailbox {
