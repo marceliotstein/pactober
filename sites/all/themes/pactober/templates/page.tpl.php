@@ -108,9 +108,9 @@
 </div>
 
 <div class="row pac-main">
-  <div class="col-xs-0 col-sm-1">
+  <div class="col-xs-0 col-lg-1">
   </div>
-  <div class="col-xs-12 col-sm-10">
+  <div class="col-xs-12 col-lg-10">
     <?php if ($is_front): ?>
       <?php print views_embed_view('front_stories', 'block_1'); ?>
     <?php else: ?>
@@ -152,9 +152,10 @@
       </div>
     <?php endif; ?>
   </div>
-  <div class="col-xs-1">
+  <div class="col-xs-0 col-lg-1">
   </div>
+</div>
 
-  <footer class="footer container">
-    <?php print render($page['footer']); ?>
-  </footer>
+<footer class="footer container">
+  <?php print render($page['footer']); ?>
+</footer>

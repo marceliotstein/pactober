@@ -1,5 +1,22 @@
 /* pactober.css -- card style bootstrap theme for pacifism21 */
 
+.pac-footer {
+  background-color: rgba(0, 0, 0, .66);;
+  color: #ddff99;
+  font-size: 1.3em;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 9px;
+  padding: 20px;
+}
+
+.pac-footer a,
+.pac-footer a:link,
+.pac-footer a:visited {
+  color: #ddff99;
+  text-decoration: none;
+}
+
 .pac-front-descrip {
   margin: 0px;
   padding: 27px 0px 0px 0px;
@@ -114,7 +131,9 @@
 }
 
 .pac-main {
-  margin-top: 80px;
+  margin-top: 92px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .pac-readable-core {
@@ -150,6 +169,14 @@ body {
   border-width: 0;
   border-radius: 6px;
   padding: 7px;
+  text-align:center;
+}
+
+.pacheading-dark a,
+.pacheading-dark a:link,
+.pacheading-dark a:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .paclogo {
