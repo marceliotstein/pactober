@@ -116,7 +116,7 @@
     <?php else: ?>
       <!-- STANDARD PAGE TEMPLATE -->
       <div class="row pac-readable-core">
-        <div class="pac-readable-main col-xs-12 col-sm-12 col-md-9">
+        <div class="pac-readable-main col-xs-12 col-sm-12 col-md-8">
           <a id="main-content"></a>
           <?php if (!empty($title)): ?>
             <h1><?php print $title ?></h1>
@@ -136,7 +136,10 @@
             <div class="addthis_sharing_toolbox"></div>
           </div>
         </div>
-        <div class="pac-rightbar hidden-xs hidden-sm col-md-3">
+        <div class="pac-rightbar hidden-xs hidden-sm col-md-4">
+          <?php
+          print render($page['highlighted']);
+          ?>
           <div class="rightbar-box rightbar-search">
             <h2 class="rightbar-title">Search</h2>
             <?php
@@ -145,9 +148,6 @@
             print $search_render;
             ?>
           </div>
-          <?php
-          print render($page['highlighted']);
-          ?>
         </div>
       </div>
     <?php endif; ?>
