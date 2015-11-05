@@ -17,10 +17,9 @@ $col2 = '<div class="col-md-4 col-sm-6">';
 $col3 = '<div class="col-md-4 col-sm-6">';
 
 foreach ($rows as $id => $row) {
-  $colmod = $num_stories % 3;
-  if ($colmod==0) {
+  if ($num_stories<3) {
     $col1 .= $row;
-  } else if ($colmod==1) {
+  } else if ($num_stories<6) {
     $col2 .= $row;
   } else {
     $col3 .= $row;
