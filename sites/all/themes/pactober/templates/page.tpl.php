@@ -79,32 +79,22 @@
 
       <a href="/pactober" class="navbar-btn btn-logo btn-default"><img class="paclogo" src="/pactober/sites/all/themes/pactober/images/Pac21Straight416.jpg" /></a>
 
-      <!--<ul class="nav dropdown-menu">
-      <li><a href="/search"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Search</a></li>
-      <li><a href="/subscribe"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Subscribe</a></li>
-      <li><a href="/archives"><i class="glyphicon glyphicon-dashboard" style="color:#0000aa;"></i> Archives</a></li>
-      <li><a href="/about"><i class="glyphicon glyphicon-inbox" style="color:#11dd11;"></i> About Pacifism21</a></li>
-      <li class="nav-divider"></li>
-      <li><a href="/user"><i class="glyphicon glyphicon-cog" style="color:#dd1111;"></i> Login</a></li>
-    </ul>-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/search" role="button" data-toggle="modal">Search</a></li>
+        <li><a href="/pactober/newsletter/signup" role="button" data-toggle="modal">Subscribe</a></li>
+        <li><a href="/about" role="button" data-toggle="modal">About Pacifism21</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="collapse navbar-collapse" id="navbar-collapse2">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#loginModal" role="button" data-toggle="modal">Search</a></li>
-      <li><a href="#loginModal" role="button" data-toggle="modal">Subscribe</a></li>
-      <li><a href="#loginModal" role="button" data-toggle="modal">Archives</a></li>
-      <li><a href="#aboutModal" role="button" data-toggle="modal">About Pacifism21</a></li>
-    </ul>
-  </div>
-</div>
 </div>
 
 <div class="row pac-main">

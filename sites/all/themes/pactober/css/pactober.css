@@ -1,5 +1,20 @@
 /* pactober.css -- card style bootstrap theme for pacifism21 */
 
+#mailchimp-signup-subscribe-page-pacifism21-signup-form-form {
+  margin-left: 28px;
+  margin-right: 28px;
+  font-weight: bold;
+}
+
+.form-item-mailchimp-lists-mailchimp-10089-subscribe {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.form-item-mailchimp-lists-mailchimp-10089-subscribe label {
+  font-weight: bold;
+}
+
 #edit-comment-body-und-0-format {
   display: none;
 }
@@ -156,7 +171,7 @@ h1 {
 }
 
 .pac-readable-main {
-  padding: 0px;
+  padding: 0px 0px 0px 20px;
   margin: 0px;
 }
 
@@ -265,7 +280,7 @@ body {
   border-width: 0px;
 }
 
-.form-control {border-color:#d7d7d7;}
+<!--.form-control {border-color:#d7d7d7;}-->
 
 .btn-primary {border-color:transparent;}
 

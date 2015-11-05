@@ -153,8 +153,6 @@ h1.pac-front-title {
   display: none;
 }
 
-
-
 .dropdown-menu>li {
   text-align: right;
   border-bottom: 2px;
@@ -174,10 +172,6 @@ h1.pac-front-title {
   .container-fluid {
     padding: 18px;
   }
-}
-
-.btn-default {
-  color: #22aa66;
 }
 
 .btn-default a,
