@@ -1,5 +1,18 @@
 /* pactober.css -- card style bootstrap theme for pacifism21 */
 
+#edit-comment-body-und-0-format {
+  display: none;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+}
+
+.panel {
+  margin-bottom: 0px;
+}
+
 .pac-footer {
   background-color: rgba(0, 0, 0, .66);;
   color: #ddff99;

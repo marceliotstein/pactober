@@ -90,6 +90,13 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
+  <?php
+    // for pactober theme
+    $submitted = str_replace("Submitted ","",$submitted);
+    $subexp = explode(" - ",$submitted);
+    $submitted = $subexp[0];
+  ?>
+
   <?php if ($display_submitted): ?>
     <div class="submitted">
       <?php print $submitted; ?>
