@@ -126,17 +126,19 @@
             <div class="addthis_sharing_toolbox"></div>
           </div>
         </div>
-        <div class="pac-rightbar hidden-xs hidden-sm col-md-4">
-          <?php
-          print render($page['highlighted']);
-          ?>
-          <div class="rightbar-box rightbar-search">
-            <h2 class="rightbar-title">Search</h2>
+        <div class="hidden-xs hidden-sm col-md-4">
+          <div class="pac-rightbar">
             <?php
-            $block = module_invoke('search', 'block_view');
-            $search_render = render($block);
-            print $search_render;
+              print render($page['highlighted']);
             ?>
+            <div class="rightbar-box rightbar-search">
+              <h2 class="rightbar-title">Search</h2>
+              <?php
+                $block = module_invoke('search', 'block_view');
+                $search_render = render($block);
+                print $search_render;
+              ?>
+            </div>
           </div>
         </div>
       </div>

@@ -40,6 +40,7 @@ h1.pac-front-title {
 .review-title {
   font-weight: bold;
   font-size: 1.2em;
+  line-height: .8em;
 }
 
 .review-title a {
