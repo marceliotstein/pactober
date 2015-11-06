@@ -1,5 +1,10 @@
 /* pactober.css -- card style bootstrap theme for pacifism21 */
 
+.pac-bold {
+  font-family: Ubuntu;
+  font-weight: bolder;
+}
+
 .pac-chimp {
   padding: 6px;
 }
@@ -35,6 +40,7 @@ h1 {
 .pac-footer {
   background-color: rgba(0, 0, 0, .66);;
   color: #ddff99;
+  font-family: Ubuntu;
   font-size: 1.3em;
   font-weight: 900;
   text-align: center;
@@ -52,7 +58,7 @@ h1 {
 .pac-front-descrip {
   margin: 0px;
   padding: 27px 0px 0px 0px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1.1em;
@@ -108,6 +114,7 @@ h1 {
 .pac-rightbar h2 {
   color: #22aa66;
   text-align: right;
+  font-family: Ubuntu;
   font-style: italic;
   font-size: 1.4em;
   padding-right: 4px;
@@ -127,11 +134,13 @@ h1 {
 }
 
 .pac-large {
+  font-family: Ubuntu;
   font-size: 2.1em;
   line-height: 36px;
 }
 
 .pac-medium {
+  font-family: Ubuntu;
   font-size: 1.2em;
   line-height: 24px;
 }
@@ -183,17 +192,17 @@ h1 {
   text-align: center;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400);
 body {
   background:url("/pactober/sites/default/files/backgrounds/leafroad1920.jpg") top right no-repeat;
   background-attachment:fixed;
   background-color:#e0e0e0;
   -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto,arial,sans-serif;
+  font-family: Trebuchet MS,arial,sans-serif;
 }
 
 .pacheading-dark {
   color: #ffffff;
+  font-family: Ubuntu;
   font-size: 1.2em;
   font-weight: bold;
   background-color: #000000;
@@ -335,6 +344,7 @@ textarea {
 
 .panel .panel-heading {
  background-color:#ffffff;
+ font-family: Ubuntu;
  font-weight:700;
  font-size:16px;
  color:#262626;
@@ -343,28 +353,30 @@ textarea {
 }
 
 .panel .panel-heading a {
- font-weight:400;
- font-size:11px;
+  font-family: Ubuntu;
+  font-weight:400;
+  font-size:11px;
 }
 
 .panel .panel-default {
- border-color:#cccccc;
+  border-color:#cccccc;
 }
 
 .panel .panel-thumbnail {
- padding:0;
+  padding:0;
 }
 
 .panel .img-circle {
- width:50px;
- height:50px;
+  width:50px;
+  height:50px;
 }
 
 .list-group-item:first-child,.list-group-item:last-child {
- border-radius:0;
+  border-radius:0;
 }
 
 h4 {
+  font-family: Ubuntu;
   font-size: 1.4em;
   font-weight: bold;
   margin-top:5px;

@@ -91,7 +91,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/search" role="button" data-toggle="modal">Search</a></li>
         <li><a href="/pactober/newsletter/signup" role="button" data-toggle="modal">Subscribe</a></li>
-        <li><a href="/about" role="button" data-toggle="modal">About Pacifism21</a></li>
+        <li><a href="http://igg.me/at/pacifism21" role="button" data-toggle="modal">Support Pacifism21</a></li>
       </ul>
     </div>
   </div>
