@@ -1,5 +1,13 @@
 /* pactober.css -- card style bootstrap theme for pacifism21 */
 
+.form-item-mailchimp-lists-mailchimp-10089-subscribe {
+  /*display: none;*/
+}
+
+.footer {
+  border-top-width: 0px
+}
+
 .review-table {
   padding-top: 9px;
 }
@@ -17,6 +25,7 @@
 .review-title {
   font-weight: bold;
   font-size: 1.5em;
+
 }
 
 .review-title a {
@@ -217,6 +226,7 @@ h1 {
 
 .pac-readable-core {
   padding: 9px 9px 9px 9px;
+  margin: 6px 15px 0px 15px;
   background-color: #ffffff;
   border-radius: 9px;
 }
@@ -231,7 +241,7 @@ h1 {
 }
 
 body {
-  background:url("/pactober/sites/default/files/backgrounds/leafroad1920.jpg") top right no-repeat;
+  background:url("/pactober/sites/default/files/backgrounds/sand.jpg") top left repeat;
   background-attachment:fixed;
   background-color:#e0e0e0;
   -webkit-font-smoothing: antialiased;
