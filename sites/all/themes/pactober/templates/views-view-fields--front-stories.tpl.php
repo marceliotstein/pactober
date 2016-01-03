@@ -28,6 +28,7 @@
 $body = "";
 $img = "";
 $tout_order = 0;
+$tout_title = null;
 foreach ($fields as $id => $field) {
   if ($id=="title") {
     $title = $field->content;
@@ -37,7 +38,14 @@ foreach ($fields as $id => $field) {
     $img = $field->content;
   } else if ($id=="field_tout_order") {
     $tout_order = $field->content;
+  } else if ($id=="field_tout_title") {
+    $tout_title = $field->content;
   }
+}
+if (empty($tout_title)) {
+  $tout_title = $title;
+} else if ($tout_title=="<none>") {
+  $tout_title = null;
 }
 
 // get clean img URL for background
@@ -53,9 +61,11 @@ if (!empty($justimg)) {
   // well with background image
   ?>
   <div class="well pac-story-image-well" style="background-image: url(<?php print $justimg ?>)">
-    <div class="pacheading-dark">
-      <h4><?php print $title ?></h4>
-    </div>
+    <?php if (!empty($tout_title)): ?>
+      <div class="pacheading-dark">
+        <h4><?php print $tout_title ?></h4>
+      </div>
+    <?php endif; ?>
   </div>
   <?php
 } else {
