@@ -42,6 +42,7 @@ foreach ($fields as $id => $field) {
     $tout_title = $field->content;
   }
 }
+
 if (empty($tout_title)) {
   $tout_title = $title;
 } else if ($tout_title=="<none>") {
@@ -63,7 +64,7 @@ if (!empty($justimg)) {
   <div class="well pac-story-image-well" style="background-image: url(<?php print $justimg ?>)">
     <?php if (!empty($tout_title)): ?>
       <div class="pacheading-dark">
-        <h4><?php print $tout_title ?></h4>
+        <h4><?php print $title ?></h4>
       </div>
     <?php endif; ?>
   </div>

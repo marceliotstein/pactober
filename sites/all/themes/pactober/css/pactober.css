@@ -241,7 +241,7 @@ h1 {
 }
 
 body {
-  background:url("/pactober/sites/default/files/backgrounds/sand.jpg") top left repeat;
+  background:url("/sites/default/files/backgrounds/sand.jpg") top left repeat;
   background-attachment:fixed;
   background-color:#e0e0e0;
   -webkit-font-smoothing: antialiased;
@@ -284,25 +284,25 @@ body {
 
 .pacimagewell-1 {
   min-height: 260px;
-  background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
+  background-image: url("/sites/default/files/isil-beheading500.jpg");
   background-position: center;
 }
 
 .pacimagewell-japan {
   min-height: 260px;
-  background-image: url("/pactober/sites/default/files/breakingopenjapan.jpg");
+  background-image: url("/sites/default/files/breakingopenjapan.jpg");
   background-position: center;
 }
 
 .pacimagewell-1 {
   min-height: 260px;
-  background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
+  background-image: url("/sites/default/files/isil-beheading500.jpg");
   background-position: center;
 }
 
 .pacimagewell-1 {
   min-height: 260px;
-  background-image: url("/pactober/sites/default/files/isil-beheading500.jpg");
+  background-image: url("/sites/default/files/isil-beheading500.jpg");
   background-position: center;
 }
 

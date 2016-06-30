@@ -77,7 +77,7 @@
   <div class="col-md-12">
     <div class="navbar-header">
 
-      <a href="/pactober" class="navbar-btn btn-logo btn-default"><img class="paclogo" src="/pactober/sites/all/themes/pactober/images/Pac21Straight416.jpg" /></a>
+      <a href="/" class="navbar-btn btn-logo btn-default"><img class="paclogo" src="/pactober/sites/all/themes/pactober/images/Pac21Straight416.jpg" /></a>
 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
         <span class="sr-only">Toggle navigation</span>
@@ -90,7 +90,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse2">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/search" role="button" data-toggle="modal">Search</a></li>
-        <li><a href="/pactober/newsletter/signup" role="button" data-toggle="modal">Subscribe</a></li>
+        <li><a href="/newsletter/signup" role="button" data-toggle="modal">Subscribe</a></li>
         <li><a href="http://igg.me/at/pacifism21" role="button" data-toggle="modal">Support Pacifism21</a></li>
       </ul>
     </div>
